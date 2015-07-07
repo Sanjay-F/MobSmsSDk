@@ -37,7 +37,6 @@ public class SignUpActivity extends Activity {
     private final static String EXTRA_COUNTRY_CODE = "extra_code";
 
 
-
     // 填写注册得到的APPKEY
     private static String APPKEY = "";
 
@@ -61,8 +60,13 @@ public class SignUpActivity extends Activity {
         initialView();
 
         /**
-         *
-         *
+         *在使用前，请输入你自己的账号的信息
+         *   // 填写注册得到的APPKEY
+         private static String APPKEY = "";
+
+         // 填写注册得到的APPSECRET
+         private static String APPSECRET = "";
+
          */
         initSDK();
 
