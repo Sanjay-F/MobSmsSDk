@@ -24,7 +24,7 @@
  
        @Override
       public void onItemClick(GroupListView parent, View view, int group, int position) {
-          if (position >= 0) {
+          if (position >= 0) { 
               String[] country = lvCountry.getCountry(group, position);
               if (countryRules != null && countryRules.containsKey(country[1])) {
                   Toast.makeText(this, "code=" + country[1], Toast.LENGTH_SHORT).show();
@@ -35,11 +35,12 @@
                   Toast.makeText(this, "暂时不支持", Toast.LENGTH_SHORT).show();
               }
           }
-      }
-     //countryRules就是通过网络获取的数据。
+      } 
+
+
      //String[] country = lvCountry.getCountry(group, position);这部分数据是写死在里面的
- 
- 
+     //countryRules就是通过网络获取的数据。
+     所以看起来很奇怪？
  ）
  
 * 2.他的那个CountryListview看着有点让人不开心啊，下次再稍微调整下。
