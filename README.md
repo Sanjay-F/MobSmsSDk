@@ -21,6 +21,7 @@
 * 1.目前哪些国家码还是通过 SMSSDK.getSupportedCountries(); 的形式来拿的。
  下次就直接把取回的数据保存到本地，这样就再也不用去联网等待了！！
  (目前他们的做法是，把所有国家列表都存在本地smssdk_arrays.xml里面，在countryListview显示，然后通过网络去获取实际支持的国家列表,通过两者比较，来确定是否支持！！所以你可以看到下面这段代码
+
  
      @Override
     public void onItemClick(GroupListView parent, View view, int group, int position) {
@@ -36,9 +37,8 @@
             }
         }
     }
- 
- //countryRules就是通过网络获取的数据。
-     //String[] country = lvCountry.getCountry(group, position);这部分数据是写死在里面的
+   //countryRules就是通过网络获取的数据。
+   //String[] country = lvCountry.getCountry(group, position);这部分数据是写死在里面的
  
  
  ）
