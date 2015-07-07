@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_g"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lifesense.happyrun.activity.SignUpActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/ic_line_white_trans"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/asu_country_code_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onSelectCountryCodeClick"
+            android:text="86"
+            android:textColor="@color/white" />
+
+
+        <EditText
+            android:id="@+id/asu_telephone_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@null"
+            android:gravity="start|center_vertical"
+            android:hint="输入你的电话号码"
+            android:inputType="phone"
+            android:textColor="@color/white"
+            android:textColorHint="@color/eight_transparent_white"
+            android:textCursorDrawable="@null" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/asu_validCode_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/ic_line_white_trans"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null" />
+
+        <Button
+            android:id="@+id/asu_getcode_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/round_corner_white_boilder"
+            android:onClick="onGetValidCodeClick"
+            android:singleLine="true"
+            android:text="获取验证码"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_line_white_trans"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="密码"
+            android:textColor="@color/white" />
+
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@null"
+            android:gravity="start|center_vertical"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:onClick="onRegClick"
+        android:text="注册" />
+
+
+</LinearLayout>

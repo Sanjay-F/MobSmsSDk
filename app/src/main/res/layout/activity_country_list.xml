@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="cn.day30.qmjc.activity.CountryListActivity">
+
+    <include
+        android:id="@+id/ll_search"
+        layout="@layout/smssdk_search_title_layout" />
+
+    <com.lifesense.mobsmssdk.widget.CountryList.CountryListView
+        android:id="@+id/lv_country_list"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_search" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/rl_hint_view_loading"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:id="@+id/acl_pb"
+            android:indeterminateOnly="true" />
+
+        <TextView
+            android:text="  加载列表中..请打开网络"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>
