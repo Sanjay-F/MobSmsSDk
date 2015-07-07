@@ -38,9 +38,12 @@
       } 
 
 
-     //String[] country = lvCountry.getCountry(group, position);这部分数据是写死在里面的
-     //countryRules就是通过网络获取的数据。
-     所以看起来很奇怪？
+
+
+    String[] country = lvCountry.getCountry(group, position);这部分数据是写死在里面的
+    
+    countryRules就是通过网络获取的数据。
+    所以看起来很奇怪？
  ）
  
 * 2.他的那个CountryListview看着有点让人不开心啊，下次再稍微调整下。
