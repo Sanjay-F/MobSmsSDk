@@ -20,7 +20,7 @@ import android.widget.Toast;
 import cn.smssdk.EventHandler;
 import cn.smssdk.SMSSDK;
 
-public class SignUpActivity extends ActionBarActivity {
+public class SignUpActivity extends Activity {
 
 
     private EditText etPhoneNum;
